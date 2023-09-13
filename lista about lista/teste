@@ -1,16 +1,1 @@
-def ordenar_nomes(lista_nomes):
-    for i in range(len(lista_nomes)):
-        menor_idx = i
-        for j in range(i+1, len(lista_nomes)):
-            if lista_nomes[j] < lista_nomes[menor_idx]:
-                menor_idx = j
-        lista_nomes[i], lista_nomes[menor_idx] = lista_nomes[menor_idx], lista_nomes[i]
 
-# Lista de nomes
-nomes = ["Alice", "Beatriz", "darlos", "Daniel", "Eduardo", "helipe", "Gabriela", "Helena", "Ingrid", "João", "Karen", "Lucas", "Maria", "Nuno", "Olivia", "Pedro", "Rafael", "Sofia", "Tiago", "Vanessa"]
-
-# Ordenar os nomes
-ordenar_nomes(nomes)
-
-# Imprimir a lista ordenada
-print(nomes)
